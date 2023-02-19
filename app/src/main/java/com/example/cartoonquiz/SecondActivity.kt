@@ -6,8 +6,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isNotEmpty
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.textfield.TextInputLayout
 
 class SecondActivity : AppCompatActivity() {
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +23,7 @@ class SecondActivity : AppCompatActivity() {
             var intent: Intent = Intent(this, ThirdActivity::class.java)
             startActivity(intent)
         }
+
 
 
 
